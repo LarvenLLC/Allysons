@@ -83,6 +83,9 @@
         background: #ffffff 0% 0% no-repeat padding-box;
         color: var(--red) !important;
       }
+      .slick-disabled {
+        display: none !important;
+      }
       .slick-prev,
       .slick-next {
         height: 24px;
@@ -107,8 +110,6 @@
       }
       html,
       body {
-        display: flex;
-        flex-direction: column;
         min-height: 100vh;
       }
       .slick-slider > div {
@@ -275,8 +276,8 @@
         </div>
       </nav>
     </header>
-    <main class="flex-fill">
-      <div class="slick-slider" style="height: inherit">
+    <main class="">
+      <div class="slick-slider">
         <div
           style="
             background: transparent
@@ -285,7 +286,10 @@
           "
           class="container-fluid p-5"
         >
-          <div class="ps-4" style="border-left: 2px solid white">
+          <div
+            class="col-md-8 col-lg-6 ps-5"
+            style="border-left: 2px solid white; margin-left: 5rem"
+          >
             <h1 class="text-white">Lorem Ipsum</h1>
             <br />
             <p class="text-white">
@@ -329,14 +333,13 @@
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-      defer=""
+      defer
     ></script>
     <!-- custom scripts -->
-    <script defer="">
+    <script defer>
       $(function () {
         $(".slick-slider").slick({
           infinite: false,
-          adaptiveHeight: true,
           appendArrows: "#slider-dots",
           prevArrow: `<button type="button" class="slick-prev">
               <i class="bi bi-chevron-left text-white fs-6 position-relative">
