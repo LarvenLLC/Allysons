@@ -36,12 +36,32 @@
       .bg-red {
         background-color: var(--red) !important;
       }
+      .text-red {
+        color: var(--red) !important;
+      }
       .w-90 {
         width: 90%;
       }
       .nav-item > .nav-link:not(.active) ~ div.border {
         display: none;
       }
+      .slick-dots {
+        list-style-type: none;
+        text-align: center;
+      }
+      .slick-dots > li {
+        display: inline;
+      }
+      .slick-dots > li button {
+        height: 24px;
+        width: 24px;
+        font-size: 14px;
+        border-radius: 100%;
+        border: 1px solid white;
+        background: #6f707095;
+        color: white;
+      }
+      /* #6F707095 */
     </style>
   </head>
   <body>
@@ -89,7 +109,7 @@
               class="navbar-nav ml-auto mb-2 mb-md-0 nav"
               role="tablist"
             >
-              <li class="nav-item">
+              <li class="nav-item" onclick="slideTo(0)">
                 <a
                   class="nav-link active"
                   data-bs-toggle="tab"
@@ -99,7 +119,7 @@
                 >
                 <div class="border border-1 border-white mx-auto w-75"></div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" onclick="slideTo(1)">
                 <a
                   class="nav-link"
                   data-bs-toggle="tab"
@@ -109,7 +129,7 @@
                 >
                 <div class="border border-1 border-white mx-auto w-75"></div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" onclick="slideTo(2)">
                 <a
                   class="nav-link"
                   data-bs-toggle="tab"
@@ -119,7 +139,7 @@
                 >
                 <div class="border border-1 border-white mx-auto w-75"></div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" onclick="slideTo(3)">
                 <a
                   class="nav-link"
                   data-bs-toggle="tab"
@@ -129,7 +149,7 @@
                 >
                 <div class="border border-1 border-white mx-auto w-75"></div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" onclick="slideTo(4)">
                 <a
                   class="nav-link"
                   data-bs-toggle="tab"
@@ -139,7 +159,7 @@
                 >
                 <div class="border border-1 border-white mx-auto w-75"></div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" onclick="slideTo(5)">
                 <a
                   class="nav-link"
                   data-bs-toggle="tab"
@@ -149,7 +169,7 @@
                 >
                 <div class="border border-1 border-white mx-auto w-75"></div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" onclick="slideTo(6)">
                 <a
                   class="nav-link"
                   data-bs-toggle="tab"
@@ -165,16 +185,19 @@
       </nav>
     </header>
     <main>
-      <div class="your-class">
+      <div class="slick-slider">
+        <div>your content</div>
+        <div>your content</div>
+        <div>your content</div>
+        <div>your content</div>
         <div>your content</div>
         <div>your content</div>
         <div>your content</div>
       </div>
     </main>
-    <footer class="navbar bg-dark text-white">
-      <small class="mx-auto">
-        &copy;2021, The Allysons. All rights reserved
-      </small>
+    <footer class="py-3 bg-dark text-white text-center">
+      <div id="slider-dots"></div>
+      <small> &copy;2021, The Allysons. All rights reserved </small>
     </footer>
     <!-- Bootstrap Bundle with Popper -->
     <script
@@ -193,8 +216,16 @@
     <!-- custom scripts -->
     <script defer>
       $(function () {
-        $(".your-class").slick();
+        $(".slick-slider").slick({
+          arrows: false,
+          dots: true,
+          appendDots: "#slider-dots",
+          // dotsClass: ''
+        });
       });
+      function slideTo(index) {
+        $(".slick-slider").slick("slickGoTo", index);
+      }
     </script>
   </body>
 </html>
