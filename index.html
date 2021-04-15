@@ -44,6 +44,9 @@
       .text-red {
         color: var(--red) !important;
       }
+      .border-red {
+        border-color: var(--red) !important;
+      }
       .w-90 {
         width: 90%;
       }
@@ -111,6 +114,13 @@
       html,
       body {
         min-height: 100vh;
+      }
+      .slick-track {
+        display: flex !important;
+      }
+
+      .slick-slide {
+        height: inherit !important;
       }
       .slick-slider > div {
         min-height: 100%;
@@ -571,51 +581,290 @@
         <!-- our partners section -->
         <section class="container-fluid">
           <div>
-            <div class="row row-cols-md-6">
+            <div class="row row-cols-lg-2">
               <div></div>
-              <div>
-                <div class="row justify-content-end">
-                  <div class="col-auto">
-                    <h2 class="text-red">Our happy</h2>
-                    <h2 class="text-red">CUSTOMERS</h2>
+              <div class="p-5">
+                <div>
+                  <div class="row justify-content-end">
+                    <div class="col-auto">
+                      <h2 class="text-red">Our happy</h2>
+                      <h2 class="text-red">CUSTOMERS</h2>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-auto">
-                    <img
-                      src="http://placehold.it/"
-                      style="height: 150px"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-auto">
-                    <img
-                      src="http://placehold.it/"
-                      style="height: 150px"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-auto">
-                    <img
-                      src="http://placehold.it/"
-                      style="height: 150px"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-auto">
-                    <img
-                      src="http://placehold.it/"
-                      style="height: 150px"
-                      alt=""
-                    />
+                  <div class="row">
+                    <div class="col-auto">
+                      <img
+                        src="http://placehold.it/"
+                        style="height: 150px"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-auto">
+                      <img
+                        src="http://placehold.it/"
+                        style="height: 150px"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-auto">
+                      <img
+                        src="http://placehold.it/"
+                        style="height: 150px"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-auto">
+                      <img
+                        src="http://placehold.it/"
+                        style="height: 150px"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <!-- section -->
-        <section class="container-fluid"><div></div></section>
+        <!-- our team section -->
+        <section class="container-fluid">
+          <div>
+            <div class="row row-cols-lg-2 gy-3">
+              <div>
+                <div class="p-5 ms-5">
+                  <h2 class="text-red">Our Champion</h2>
+                  <h2 class="text-red">TEAM</h2>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="py-5 row row-cols-md-2 row-cols-lg-3 justify-content-around gy-3 gy-xl-5"
+                >
+                  <div class="">
+                    <div
+                      class="mb-2 mx-auto bg-white border border-2 border-red rounded-circle"
+                      style="
+                        height: 150px;
+                        width: 150px;
+                        background: url(public/industrial-port-container-yard.jpg)
+                          center no-repeat;
+                        background-size: cover;
+                      "
+                    ></div>
+                    <div class="text-center"><b>Rachel Mmanyi</b></div>
+                    <div class="text-center">
+                      <small>Chief Executive Officer</small>
+                    </div>
+                    <div class="text-center">
+                      <a
+                        href="https://twitter.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="me-1"
+                        ><i class="bi bi-twitter text-red fs-6"></i
+                      ></a>
+                      <a
+                        href="https://linkedin.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="me-1 text-decoration-none"
+                      >
+                        <i
+                          class="bi cib-linkedin-in text-red fs-6 position-relative"
+                          style="bottom: -3px"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      class="mb-2 mx-auto bg-white border border-2 border-red rounded-circle"
+                      style="
+                        height: 150px;
+                        width: 150px;
+                        background: url(public/industrial-port-container-yard.jpg)
+                          center no-repeat;
+                        background-size: cover;
+                      "
+                    ></div>
+                    <div class="text-center"><b>Eveline Samson</b></div>
+                    <div class="text-center"><small>Advisor</small></div>
+                    <div class="text-center">
+                      <a
+                        href="https://twitter.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="me-1"
+                        ><i class="bi bi-twitter text-red fs-6"></i
+                      ></a>
+                      <a
+                        href="https://linkedin.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="me-1 text-decoration-none"
+                      >
+                        <i
+                          class="bi cib-linkedin-in text-red fs-6 position-relative"
+                          style="bottom: -3px"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      class="mb-2 mx-auto bg-white border border-2 border-red rounded-circle"
+                      style="
+                        height: 150px;
+                        width: 150px;
+                        background: url(public/industrial-port-container-yard.jpg)
+                          center no-repeat;
+                        background-size: cover;
+                      "
+                    ></div>
+                    <div class="text-center"><b>Adson Msomi</b></div>
+                    <div class="text-center">
+                      <small>Logistic Manager</small>
+                    </div>
+                    <div class="text-center">
+                      <a
+                        href="https://twitter.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="me-1"
+                        ><i class="bi bi-twitter text-red fs-6"></i
+                      ></a>
+                      <a
+                        href="https://linkedin.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="me-1 text-decoration-none"
+                      >
+                        <i
+                          class="bi cib-linkedin-in text-red fs-6 position-relative"
+                          style="bottom: -3px"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      class="mb-2 mx-auto bg-white border border-2 border-red rounded-circle"
+                      style="
+                        height: 150px;
+                        width: 150px;
+                        background: url(public/industrial-port-container-yard.jpg)
+                          center no-repeat;
+                        background-size: cover;
+                      "
+                    ></div>
+                    <div class="text-center"><b>Rauben John</b></div>
+                    <div class="text-center"><small> Advisor</small></div>
+                    <div class="text-center">
+                      <a
+                        href="https://twitter.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="me-1"
+                        ><i class="bi bi-twitter text-red fs-6"></i
+                      ></a>
+                      <a
+                        href="https://linkedin.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="me-1 text-decoration-none"
+                      >
+                        <i
+                          class="bi cib-linkedin-in text-red fs-6 position-relative"
+                          style="bottom: -3px"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      class="mb-2 mx-auto bg-white border border-2 border-red rounded-circle"
+                      style="
+                        height: 150px;
+                        width: 150px;
+                        background: url(public/industrial-port-container-yard.jpg)
+                          center no-repeat;
+                        background-size: cover;
+                      "
+                    ></div>
+                    <div class="text-center"><b>Judith Steven</b></div>
+                    <div class="text-center">
+                      <small> Marketing Manager</small>
+                    </div>
+                    <div class="text-center">
+                      <a
+                        href="https://twitter.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="me-1"
+                        ><i class="bi bi-twitter text-red fs-6"></i
+                      ></a>
+                      <a
+                        href="https://linkedin.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="me-1 text-decoration-none"
+                      >
+                        <i
+                          class="bi cib-linkedin-in text-red fs-6 position-relative"
+                          style="bottom: -3px"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      class="mb-2 mx-auto bg-white border border-2 border-red rounded-circle"
+                      style="
+                        height: 150px;
+                        width: 150px;
+                        background: url(public/industrial-port-container-yard.jpg)
+                          center no-repeat;
+                        background-size: cover;
+                      "
+                    ></div>
+                    <div class="text-center"><b>Steven Jones</b></div>
+                    <div class="text-center"><small>IT Manager</small></div>
+                    <div class="text-center">
+                      <a
+                        href="https://twitter.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="me-1"
+                        ><i class="bi bi-twitter text-red fs-6"></i
+                      ></a>
+                      <a
+                        href="https://linkedin.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="me-1 text-decoration-none"
+                      >
+                        <i
+                          class="bi cib-linkedin-in text-red fs-6 position-relative"
+                          style="bottom: -3px"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <!--  section -->
         <section class="container-fluid"><div></div></section>
       </div>
@@ -643,7 +892,7 @@
       $(function () {
         $(".slick-slider").slick({
           infinite: false,
-          adaptiveHeight: true,
+          // adaptiveHeight: true,
           appendArrows: "#slider-dots",
           prevArrow: `<button type="button" class="slick-prev">
               <i class="bi bi-chevron-left text-white fs-6 position-relative">
