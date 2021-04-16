@@ -136,10 +136,10 @@
       body {
         min-height: 100vh;
       }
-      .slick-track {
+      /* make sure slides fill height */
+      /* .slick-track {
         display: flex !important;
-      }
-
+      } */
       .slick-slide {
         height: inherit !important;
       }
@@ -323,7 +323,7 @@
           "
           class="container-fluid position-relative"
         >
-          <div class="p-5">
+          <div class="p-5 my-5">
             <div
               class="col-md-8 col-lg-6 ps-5"
               style="border-left: 2px solid white; margin-left: 5rem"
@@ -350,7 +350,7 @@
         </section>
         <!-- who we are section -->
         <section class="container-fluid">
-          <div class="w-100">
+          <div class="p-5 my-5">
             <div class="row mx-auto gx-5">
               <div
                 class="col-md-7 col-lg-6 d-flex justify-content-center align-items-center"
@@ -384,7 +384,7 @@
             </div>
             <br />
             <div
-              class="row row-cols-md-2 row-cols-lg-3 row-cols-xl-4 gy-3 mx-auto"
+              class="row row-cols-md-2 row-cols-lg-3 row-cols-xl-4 gy-5 mx-auto"
             >
               <div>
                 <div class="card card-body p-5 bg-primary rounded">
@@ -514,9 +514,7 @@
           <div class="p-5">
             <div class="row gy-3 mx-auto">
               <div class="col-xl-6">
-                <div
-                  class="row h-100 align-items-center justify-content-center"
-                >
+                <div class="row h-100 py-5 justify-content-center">
                   <div class="col p-lg-5">
                     <h2 class="text-white">Why you should</h2>
                     <h2 class="text-white"><b>CHOOSE US?</b></h2>
@@ -646,7 +644,7 @@
         <section class="container-fluid">
           <div>
             <div class="row row-cols-lg-2 gy-3">
-              <div>
+              <div class="pe-xl-5">
                 <div class="p-5 ms-5">
                   <h2 class="text-red">Our Champion</h2>
                   <h2 class="text-red"><b>TEAM</b></h2>
@@ -886,9 +884,7 @@
           <div class="p-5">
             <div class="row gy-3 mx-auto">
               <div class="col-lg-5 col-xl-6">
-                <div
-                  class="row h-100 align-items-center justify-content-center"
-                >
+                <div class="row h-100 py-5 pe-xl-5 justify-content-center">
                   <div class="col p-lg-5">
                     <h2 class="text-white">Let's</h2>
                     <h2 class="text-white"><b>CONNECT</b></h2>
@@ -1232,7 +1228,7 @@
       $(function () {
         $(".slick-slider").slick({
           infinite: false,
-          // adaptiveHeight: true,
+          adaptiveHeight: true,
           appendArrows: "#slider-dots",
           prevArrow: `<button type="button" class="slick-prev">
               <i class="bi bi-chevron-left text-white fs-6 position-relative">
