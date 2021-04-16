@@ -42,12 +42,12 @@
       crossorigin="anonymous"
     />
     <!-- website title -->
-    <title>Allysons</title>
+    <title>The Allysons</title>
     <!-- custom styles -->
     <style>
       :root {
-        --primary: #112657;
-        --red: #902321;
+        --primary: #273873;
+        --red: #f94340;
         --silver: #c3c3c3;
       }
       .bg-primary {
@@ -136,6 +136,11 @@
       body {
         min-height: 100vh;
       }
+      input.text-white::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: white;
+        opacity: 0.7; /* Firefox */
+      }
       /* make sure slides fill height */
       /* .slick-track {
         display: flex !important;
@@ -148,6 +153,11 @@
       }
       .rounded {
         border-radius: 0.5rem !important;
+      }
+      @media screen and (max-width: 768px) {
+        .nav-item > .nav-link ~ div.border {
+          display: none !important;
+        }
       }
     </style>
   </head>
@@ -209,11 +219,9 @@
       </nav>
       <nav class="navbar navbar-expand-md navbar-dark bg-primary">
         <div class="container-fluid">
-          <a class="navbar-brand" href=""
-            >The Allysons<small
-              ><sup><small>TM</small></sup></small
-            ></a
-          >
+          <a class="navbar-brand" href="">
+            <img src="public/logo.png" style="height: 42px" alt="Allysons" />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -316,7 +324,7 @@
         <!-- home section -->
         <section
           style="
-            background: linear-gradient(100deg, #0b1157e3 0%, #90121200 100%) 0%
+            background: linear-gradient(100deg, #273773e3 0%, #90121200 100%) 0%
                 0% no-repeat padding-box,
               url(public/industrial-port-container-yard.jpg) center no-repeat;
             background-size: 100% auto;
@@ -328,7 +336,7 @@
               class="col-md-8 col-lg-6 ps-5"
               style="border-left: 2px solid white; margin-left: 5rem"
             >
-              <h1 class="text-white">Lorem Ipsum</h1>
+              <h1 class="text-white"><b>Lorem Ipsum</b></h1>
               <br />
               <p class="text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
