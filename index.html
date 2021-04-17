@@ -154,6 +154,18 @@
       .rounded {
         border-radius: 0.5rem !important;
       }
+      .uk-cover-container {
+        overflow: hidden;
+        position: relative;
+      }
+      .uk-cover {
+        max-width: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
       @media screen and (max-width: 768px) {
         .nav-item > .nav-link ~ div.border {
           display: none !important;
@@ -358,27 +370,35 @@
         </section>
         <!-- who we are section -->
         <section class="container-fluid">
-          <div class="p-5 my-5">
+          <div class="">
             <div class="row mx-auto gx-5">
-              <div
-                class="col-md-7 col-lg-6 d-flex justify-content-center align-items-center"
-              >
-                <div class="card card-body p-5 bg-primary rounded">
-                  <h2 class="text-white mb-0">Who <b>we Are</b></h2>
-                  <hr class="bg-white" style="height: 2px" />
-                  <p class="text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                  </p>
+              <div class="col-md-7 col-lg-6 my-5 px-xl-5">
+                <div class="px-xl-5">
+                  <div
+                    class="card card-body p-5 my-5 mx-xl-5 bg-primary rounded"
+                  >
+                    <h2 class="text-white mb-0">Who <b>we Are</b></h2>
+                    <hr class="bg-white" style="height: 2px" />
+                    <p class="text-white">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-5 col-lg-6"></div>
+              <div
+                class="col-md-5 col-lg-6 p-5"
+                style="
+                  background: url(public/About.jpg) center no-repeat;
+                  background-size: 100% auto;
+                "
+              ></div>
             </div>
           </div>
         </section>
@@ -523,16 +543,16 @@
             background: #000000b1 0% 0% no-repeat padding-box;
             background-size: auto 100%;
           "
-          class="container-fluid position-relative"
+          class="container-fluid uk-cover-container"
         >
           <img
             src="public/Why us.jpg"
-            class="position-absolute h-100"
+            class="uk-cover w-100"
             style="z-index: -1"
             alt=""
           />
           <div class="p-5 my-xl-5">
-            <div class="row gy-4 mx-auto">
+            <div class="row gy-3 mx-auto">
               <div class="col-xl-6">
                 <div class="row h-100 py-5 justify-content-center">
                   <div class="col p-lg-5 mx-xl-5">
@@ -550,7 +570,7 @@
                 </div>
               </div>
               <div class="col-xl-6">
-                <div class="row row-cols-md-2 gy-3 mx-auto">
+                <div class="row row-cols-md-2 gy-5 mx-auto">
                   <div>
                     <div class="card card-body p-5 bg-primary rounded">
                       <h3 class="text-white">Logistics</h3>
@@ -981,11 +1001,25 @@
           </div>
         </section>
         <!-- contact us section -->
-        <section class="container-fluid bg-dark">
+        <section
+          style="
+            background: #000000b1 0% 0% no-repeat padding-box;
+            background-size: auto 100%;
+          "
+          class="container-fluid uk-cover-container"
+        >
+          <img
+            src="public/Contact us.jpg"
+            class="uk-cover w-100"
+            style="z-index: -1"
+            alt=""
+          />
           <div class="p-5">
             <div class="row gy-3 mx-auto">
               <div class="col-lg-5 col-xl-6">
-                <div class="row h-100 py-5 pe-xl-5 justify-content-center">
+                <div
+                  class="row h-100 py-5 pe-xl-5 mx-xl-5 justify-content-center"
+                >
                   <div class="col p-lg-5">
                     <h2 class="text-white">Let's</h2>
                     <h2 class="text-white"><b>CONNECT</b></h2>
@@ -998,7 +1032,7 @@
                 </div>
               </div>
               <div class="col-lg-7 col-xl-6">
-                <div class="row row-cols-md-2 gy-3 mx-auto">
+                <div class="row row-cols-md-2 g-5 mx-auto">
                   <div>
                     <div class="card card-body p-4 bg-silver rounded">
                       <div class="row align-items-center">
