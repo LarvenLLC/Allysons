@@ -165,7 +165,16 @@
         top: 50%;
         transform: translate(-50%, -50%);
       }
-
+      h1 {
+        font-size: 5rem !important;
+      }
+      h2 {
+        font-size: 4rem !important;
+      }
+      p,
+      button {
+        font-size: 1.5rem;
+      }
       @media screen and (max-width: 768px) {
         .nav-item > .nav-link ~ div.border {
           display: none !important;
@@ -361,7 +370,7 @@
               </p>
               <br />
               <button
-                class="btn btn-link text-white text-decoration-none border border-white border-1 rounded-pill"
+                class="btn btn-lg btn-link text-white text-decoration-none border border-white border-1 rounded-pill"
               >
                 Read More&ensp;<i class="bi bi-arrow-right"></i>
               </button>
@@ -371,9 +380,15 @@
         <!-- who we are section -->
         <section class="container-fluid">
           <div class="">
-            <div class="row mx-auto gx-5">
-              <div class="col-md-7 col-lg-6 my-5 px-xl-5">
-                <div class="px-xl-5">
+            <div class="row gx-5">
+              <div class="col-md-7 col-lg-6 px-xl-5 uk-cover-container">
+                <img
+                  src="public/industrial-port-cut.jpg"
+                  class="uk-cover w-100"
+                  style="z-index: -1"
+                  alt=""
+                />
+                <div class="px-xl-5 py-5">
                   <div
                     class="card card-body p-5 my-5 mx-xl-5 bg-primary rounded"
                   >
@@ -392,13 +407,14 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="col-md-5 col-lg-6 p-5"
-                style="
-                  background: url(public/About.jpg) center no-repeat;
-                  background-size: 100% auto;
-                "
-              ></div>
+              <div class="col-md-5 col-lg-6 p-5 uk-cover-container">
+                <img
+                  src="public/About.jpg"
+                  class="uk-cover w-100 h-100"
+                  style="z-index: -1"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -547,7 +563,7 @@
         >
           <img
             src="public/Why us.jpg"
-            class="uk-cover w-100"
+            class="uk-cover w-100 h-100"
             style="z-index: -1"
             alt=""
           />
@@ -644,12 +660,14 @@
         <section class="container-fluid">
           <div>
             <div class="row row-cols-lg-2">
-              <div
-                style="
-                  background: url(public/happy\ Customer.jpg) center no-repeat;
-                  background-size: 100% auto;
-                "
-              ></div>
+              <div class="uk-cover-container">
+                <img
+                  src="public/happy Customer.jpg"
+                  class="uk-cover w-100 h-100"
+                  style="z-index: -1"
+                  alt=""
+                />
+              </div>
               <div class="p-5">
                 <div>
                   <div class="mb-3 row justify-content-end">
