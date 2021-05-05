@@ -145,6 +145,11 @@
       .slick-track {
         display: flex !important;
       }
+      @media screen and (max-width: 576px) {
+        .slick-track {
+          display: block !important;
+        }
+      }
       .slick-slide {
         height: inherit !important;
       }
@@ -355,11 +360,11 @@
           "
           class="container-fluid position-relative"
         >
-          <div class="p-5 my-5">
+          <div class="px-md-5 py-5 my-5">
             <div class="p-xl-5">
               <div
-                class="col-md-8 col-lg-6 ps-5"
-                style="border-left: 2px solid white; margin-left: 5rem"
+                class="col-md-8 col-lg-6 ps-5 ms-md-5"
+                style="border-left: 2px solid white"
               >
                 <h1 class="text-white"><b>Lorem Ipsum</b></h1>
                 <br />
@@ -426,7 +431,7 @@
         </section>
         <!-- what we do section -->
         <section class="container-fluid bg-dark">
-          <div class="p-5">
+          <div class="px-md-5 py-5">
             <div class="row mx-auto my-3">
               <div class="col">
                 <h2 class="text-white">What we <b>Do</b></h2>
