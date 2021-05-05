@@ -145,11 +145,6 @@
       .slick-track {
         display: flex !important;
       }
-      @media screen and (max-width: 576px) {
-        .slick-track {
-          display: block !important;
-        }
-      }
       .slick-slide {
         height: inherit !important;
       }
@@ -175,6 +170,17 @@
       }
       h2 {
         font-size: 4rem !important;
+      }
+      @media screen and (max-width: 576px) {
+        .slick-track {
+          display: block !important;
+        }
+        h1 {
+          font-size: 4rem !important;
+        }
+        h2 {
+          font-size: 3rem !important;
+        }
       }
       /* p, */
       button {
@@ -1054,7 +1060,7 @@
             alt=""
           />
           <div
-            class="d-flex flex-column h-100 justify-content-xl-around px-md-5 py-5"
+            class="d-flex flex-column h-100 justify-content-xl-around px-md-5 py-md-5"
           >
             <div class="py-5">
               <div class="row gy-3 mx-auto">
